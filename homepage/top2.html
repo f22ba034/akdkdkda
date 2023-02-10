@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホームページ</title>
+    <style>
+        h1 {
+            font-size: 70px;
+            text-align:center;
+            height: 100px;
+            line-height: 100px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        h4 {
+            font-size: 25px;
+        }
+        #test {
+			width: 30%;
+            height: 30%;
+        }
+        #aiu {
+            width: 40%;
+            height: 30%;
+        }
+    </style>
+    <script>
+        var d = 0;
+        function kaiten(x){
+        var e = document.getElementById("test");
+        d = d + x;
+        e.style.transform = "rotate(" + d + "deg)";
+        } 
+    </script>
+</head>
+<body>
+    <h1>自己紹介</h1>
+    <h2>プロフィール</h2>
+    <p>
+        生年月日：２００４年３月２８日<br>
+        趣味：筋トレ、格闘技観戦、ゲーム、自然観光<br>
+        出身：群馬県伊勢崎市
+    </p>
+    <img id="test" src="IMG_2488.JPG" /><br>
+    <input type="button" value="回転" onclick="kaiten(90);">
+    <p>
+        この試合はボクシングライトフライ級の世界最強を決める
+        試合でした。その世界最強を決める試合が日本人同士でやるのは<br>
+        日本で2回目というものすごくアツい試合でした。試合自体もすごく盛り上がりこんな試合を生で見れたことがとても嬉しいです。
+    </p>
+    <img id="aiu" src="IMG_1425.JPG">
+    <p>
+        日光市に行った時の写真です。
+    </p>
+    <h3>好きな格闘技選手</h3>
+    <p>テレンスクロフォード、ライアンガルシア</p>
+    <h4>好きなゲーム</h4>
+    <p>バトルフィールドV</p>
+</body>
+</html>
